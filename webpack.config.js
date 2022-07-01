@@ -14,6 +14,20 @@ module.exports = {
     // output will be dist/bundle.js, dist/buff.js, dist/anything.js
     filename: "[name].js",
   },
+  devServer: {
+    // where to serve
+    static: {
+      directory: path.resolve(__dirname, "dist"),
+    },
+    port: 3000,
+    // auto open browser when run 'npm run dev' ('webpack serve')
+    open: true,
+    // hot reloading
+    hot: true,
+    // enable gzip compression
+    compress: true,
+    historyApiFallback: true,
+  },
   module: {
     // elements of array is rules for file type
     rules: [
