@@ -13,4 +13,13 @@ module.exports = {
     // output will be dist/bundle.js, dist/buff.js, dist/anything.js
     filename: "[name].js",
   },
+  module: {
+    // elements of array is rules for file type
+    rules: [
+      {
+        test: /\.scss$/,
+        use: ["style-loader", "css-loader", "sass-loader"],
+      },
+    ],
+  },
 };
