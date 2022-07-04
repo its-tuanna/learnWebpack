@@ -16,6 +16,8 @@ module.exports = {
     // clean the /dist folder before each build
     clean: true,
   },
+  // for debugging
+  devtool: "source-map",
   devServer: {
     // where to serve
     static: {
