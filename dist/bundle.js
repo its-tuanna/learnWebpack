@@ -14,6 +14,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 function helloWorld() {
   console.log("hello world");
+  return 9;
 }
 
 /***/ }),
