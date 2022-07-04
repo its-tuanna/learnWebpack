@@ -13,6 +13,8 @@ module.exports = {
     // [name] will be replaced by 'bundle', if entry has multiple keys e.g other than 'bundle', entry has other key name 'buff', 'anything'
     // output will be dist/bundle.js, dist/buff.js, dist/anything.js
     filename: "[name].js",
+    // clean the /dist folder before each build
+    clean: true,
   },
   devServer: {
     // where to serve
