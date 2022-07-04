@@ -2,6 +2,22 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/exportFunc.js":
+/*!***************************!*\
+  !*** ./src/exportFunc.js ***!
+  \***************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "helloWorld": () => (/* binding */ helloWorld)
+/* harmony export */ });
+function helloWorld() {
+  console.log("hello world");
+}
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/main.scss":
 /*!***********************************************************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/main.scss ***!
@@ -528,23 +544,6 @@ function styleTagTransform(css, styleElement) {
 
 module.exports = styleTagTransform;
 
-/***/ }),
-
-/***/ "./src/exportFunc.js":
-/*!***************************!*\
-  !*** ./src/exportFunc.js ***!
-  \***************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "helloWorld": () => (/* binding */ helloWorld)
-/* harmony export */ });
-function helloWorld() {
-  console.log("hello world");
-}
-
-
 /***/ })
 
 /******/ 	});
@@ -631,9 +630,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _styles_main_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styles/main.scss */ "./src/styles/main.scss");
 
 
-
 console.log((0,_exportFunc__WEBPACK_IMPORTED_MODULE_0__.helloWorld)());
-
 })();
 
 /******/ })()
