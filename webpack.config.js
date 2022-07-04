@@ -15,6 +15,8 @@ module.exports = {
     filename: "[name].js",
     // clean the /dist folder before each build
     clean: true,
+    // [ext] means extension
+    assetModuleFilename: "[name][ext]",
   },
   // for debugging
   devtool: "source-map",
@@ -49,6 +51,10 @@ module.exports = {
             presets: ["@babel/preset-env"],
           },
         },
+      },
+      {
+        test: /\.(png|jpe?g|svg|gif|ico)$/i,
+        type: "asset/resource",
       },
     ],
   },
